@@ -1,7 +1,8 @@
 {
   "scripts": {
     "dev": "poi dev index.js",
-    "build": "poi build index.js"
+    "build": "poi build index.js",
+    "deploy": "yarn build && surge ./dist --domain just-links.surge.sh"
   },
   "dependencies": {
     "vuex": "^2.3.1",
